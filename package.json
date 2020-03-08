@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./build && tsc",
+    "start": "node ./build/index.js",
+    "start:watch": "nodemon --watch app --watch 'src' -e ts --exec 'ts-node src/index.ts'"
+  },
   "dependencies": {
     "@types/node": "^13.7.4",
     "@types/ws": "^7.2.1",
