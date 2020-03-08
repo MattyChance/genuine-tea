@@ -13,7 +13,7 @@ type Query {
   functionalityByName(name: String!): Functionality
   getAllFunctionalities: [Functionality!]!
   teaById(name: Float!): Tea
-  teasByFunctionality(functionalityId: Float!): [Tea!]!
+  teasByFunctionality(withCaf: Boolean!, functionalityId: Float!): [Tea!]!
 }
 
 type Tea {
