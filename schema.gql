@@ -19,13 +19,7 @@ type Query {
 type Tea {
   id: Int!
   name: String!
-  category: TeaCategory!
   caffeine: Boolean!
   functions: [Functionality!]!
   description: String!
-}
-
-type TeaCategory {
-  id: Int!
-  name: String!
 }

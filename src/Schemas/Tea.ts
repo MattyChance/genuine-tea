@@ -1,6 +1,5 @@
 import { Field, Int, ObjectType } from "type-graphql";
 import Functionality from "./Functionality";
-import TeaCategory from "./TeaCategory";
 
 @ObjectType()
 export default class Tea {
@@ -9,9 +8,6 @@ export default class Tea {
 
     @Field()
     name: string;
-
-    @Field()
-    category: TeaCategory;
 
     @Field()
     caffeine: boolean;
