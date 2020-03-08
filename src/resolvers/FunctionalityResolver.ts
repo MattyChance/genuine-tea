@@ -8,4 +8,9 @@ export default class {
     functionalityByName(@Arg("name") name: string): FunctionalityData | undefined {
         return functionalities.find(functionality => functionality.name === name);
     }
+
+    @Query(returns => [Functionality])
+    getAllFunctionalities(): FunctionalityData[] {
+        return functionalities;
+    }
 }

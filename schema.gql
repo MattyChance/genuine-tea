@@ -11,6 +11,7 @@ type Functionality {
 
 type Query {
   functionalityByName(name: String!): Functionality
+  getAllFunctionalities: [Functionality!]!
   teaById(name: Float!): Tea
   teasByFunctionality(functionalityId: Float!): [Tea!]!
 }

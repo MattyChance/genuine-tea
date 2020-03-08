@@ -14,10 +14,10 @@ export interface TeaData {
 }
 
 export const functionalities: FunctionalityData[] = [
-    { id: 1, name: "energize", description: "" },
-    { id: 2, name: "calm", description: ""},
-    { id: 3, name: "cleanse", description: "" },
-    { id: 4, name: "nourish", description: "" },
+    { id: 1, name: "energize", description: "Use the tea to wake up your body and your mind. Be ready for the best of yourself" },
+    { id: 2, name: "calm", description: "Use the tea to sooth, to relax, to breath into the beauty of life"},
+    { id: 3, name: "cleanse", description: "Use the tea to cleanse, to feel light and good" },
+    { id: 4, name: "nourish", description: "Use the tea to nourish, to brighten up your elegance" },
 ];
 
 export const teas: TeaData[] = [
